@@ -1,0 +1,142 @@
+{
+  "logo/horizontal": {
+    "mediaType": "logo",
+    "currentUrl": "/airo-assets/uploads/logo-horizontal-cf69c0ba.png",
+    "searchQuery": "",
+    "alternatives": [
+      "/airo-assets/uploads/logo-horizontal-af835625.jpg",
+      "/airo-assets/uploads/logo-horizontal-0a9b7a5f.jpg",
+      "/airo-assets/uploads/d2e879de9a24c5e3ec92896c2437a93e.png"
+    ],
+    "userModified": true,
+    "createdAt": "2026-10-01T08:58:18.857Z",
+    "lastUpdated": "2026-10-02T01:37:51.717Z",
+    "uploadSources": {
+      "/airo-assets/uploads/logo-horizontal-0a9b7a5f.jpg": "50d3df58ed59d2e184f659a81baf2772.jpg",
+      "/airo-assets/uploads/logo-horizontal-af835625.jpg": "d2e53a658597650a523475034a58c52f.jpg",
+      "/airo-assets/uploads/logo-horizontal-cf69c0ba.png": "1le0ioevl4_1790905036744_file_cW0iPZHe24.PNG"
+    },
+    "uploadContentHash": "7e03cf245d8b77e27103ba753ee8ca84932065c74a21e0113957adcfdfe9dce7",
+    "naturalOrientation": "square",
+    "lightSurfaceUrl": "/airo-assets/uploads/logo-horizontal-cf69c0ba.png",
+    "surfaceMode": "light"
+  },
+  "pages/home/radar": {
+    "requestedSize": {
+      "width": 900,
+      "height": 600,
+      "fit": "cover"
+    },
+    "orientations": "horizontal",
+    "graphicalStyles": "photography",
+    "minimumSize": "large",
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2293141059",
+    "searchQuery": "scientific laboratory research dark moody microscope",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/1444491801",
+      "https://img1.wsimg.com/isteam/getty/2296699417",
+      "https://img1.wsimg.com/isteam/getty/2293141365"
+    ],
+    "userModified": false,
+    "createdAt": "2026-10-01T08:59:03.560Z",
+    "lastUpdated": "2026-10-01T08:59:03.560Z",
+    "gettyId": "2293141059",
+    "alternativeGettyIds": [
+      "1444491801",
+      "2296699417",
+      "2293141365"
+    ]
+  },
+  "pages/home/hero": {
+    "requestedSize": {
+      "width": 1400,
+      "height": 900,
+      "fit": "cover"
+    },
+    "orientations": "horizontal",
+    "graphicalStyles": "photography",
+    "minimumSize": "large",
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2261623162",
+    "searchQuery": "deep space dark particle field abstract science technology",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/1347035537",
+      "https://img1.wsimg.com/isteam/getty/2161010885",
+      "https://img1.wsimg.com/isteam/getty/2234142725",
+      "https://img1.wsimg.com/isteam/getty/2178435927"
+    ],
+    "userModified": false,
+    "createdAt": "2026-10-01T08:59:05.369Z",
+    "lastUpdated": "2026-10-01T08:59:05.369Z",
+    "gettyId": "2261623162",
+    "alternativeGettyIds": [
+      "1347035537",
+      "2161010885",
+      "2234142725",
+      "2178435927"
+    ]
+  },
+  "logo/primary": {
+    "lightSurfaceUrl": "/airo-assets/uploads/logo-primary-cf69c0ba.png",
+    "surfaceMode": "light",
+    "currentUrl": "/airo-assets/uploads/logo-primary-cf69c0ba.png",
+    "userModified": true,
+    "mediaType": "logo",
+    "searchQuery": "",
+    "alternatives": [
+      "/airo-assets/uploads/logo-primary-f235f3e3.png",
+      "/airo-assets/uploads/logo-primary-e628983a.png"
+    ],
+    "uploadSources": {
+      "/airo-assets/uploads/logo-primary-e628983a.png": "50d3df58ed59d2e184f659a81baf2772.jpg",
+      "/airo-assets/uploads/logo-primary-f235f3e3.png": "d2e53a658597650a523475034a58c52f.jpg",
+      "/airo-assets/uploads/logo-primary-cf69c0ba.png": "1le0ioevl4_1790905036744_file_cW0iPZHe24.PNG"
+    },
+    "uploadContentHash": "7e03cf245d8b77e27103ba753ee8ca84932065c74a21e0113957adcfdfe9dce7",
+    "createdAt": "2026-10-01T09:03:49.773Z",
+    "lastUpdated": "2026-10-02T01:37:51.718Z",
+    "naturalOrientation": "square"
+  },
+  "logo/vertical": {
+    "lightSurfaceUrl": "/airo-assets/uploads/logo-vertical-44ebdb8d.png",
+    "surfaceMode": "light",
+    "currentUrl": "/airo-assets/uploads/logo-vertical-44ebdb8d.png",
+    "userModified": true,
+    "mediaType": "logo",
+    "searchQuery": "",
+    "alternatives": [
+      "/airo-assets/uploads/logo-vertical-d2d9b7f2.png",
+      "/airo-assets/uploads/logo-vertical-41d24036.png"
+    ],
+    "uploadSources": {
+      "/airo-assets/uploads/logo-vertical-41d24036.png": "50d3df58ed59d2e184f659a81baf2772.jpg",
+      "/airo-assets/uploads/logo-vertical-d2d9b7f2.png": "d2e53a658597650a523475034a58c52f.jpg",
+      "/airo-assets/uploads/logo-vertical-44ebdb8d.png": "1le0ioevl4_1790905036744_file_cW0iPZHe24.PNG"
+    },
+    "uploadContentHash": "7e03cf245d8b77e27103ba753ee8ca84932065c74a21e0113957adcfdfe9dce7",
+    "createdAt": "2026-10-01T09:03:49.773Z",
+    "lastUpdated": "2026-10-02T01:37:51.718Z",
+    "naturalOrientation": "vertical"
+  },
+  "logo/favicon": {
+    "lightSurfaceUrl": "/airo-assets/uploads/logo-favicon-63f47abd.png",
+    "surfaceMode": "light",
+    "currentUrl": "/airo-assets/uploads/logo-favicon-63f47abd.png",
+    "userModified": true,
+    "mediaType": "logo",
+    "searchQuery": "",
+    "alternatives": [
+      "/airo-assets/uploads/logo-favicon-47b28227.png",
+      "/airo-assets/uploads/logo-favicon-d7e37314.png"
+    ],
+    "uploadSources": {
+      "/airo-assets/uploads/logo-favicon-d7e37314.png": "50d3df58ed59d2e184f659a81baf2772.jpg",
+      "/airo-assets/uploads/logo-favicon-47b28227.png": "d2e53a658597650a523475034a58c52f.jpg",
+      "/airo-assets/uploads/logo-favicon-63f47abd.png": "1le0ioevl4_1790905036744_file_cW0iPZHe24.PNG"
+    },
+    "uploadContentHash": "7e03cf245d8b77e27103ba753ee8ca84932065c74a21e0113957adcfdfe9dce7",
+    "createdAt": "2026-10-01T09:03:49.773Z",
+    "lastUpdated": "2026-10-02T01:37:51.718Z"
+  }
+}
