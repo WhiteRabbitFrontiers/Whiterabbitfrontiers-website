@@ -26,3 +26,20 @@ body{background:#020308}
 #radar .card,#evidence .card{background:#111422;border-color:#22283a}
 footer{margin-top:clamp(110px,15vw,220px);background:#020308}
 @media(max-width:760px){.hero{min-height:72vh;padding-top:100px;padding-bottom:120px}.section{padding-top:85px;padding-bottom:85px}#mission{margin-top:90px}#radar,#evidence{margin-top:100px}footer{margin-top:100px}}
+
+/* Cinematic editorial feature: generous negative space remains intact */
+.feature-section{max-width:1500px;margin:clamp(120px,16vw,250px) auto 0;padding:clamp(95px,11vw,165px) max(6vw,20px) 0;border-top:1px solid #121323}
+.feature-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:34px}
+.feature-index{font-size:.68rem;letter-spacing:.19em;color:#8588a5}
+.cinematic-panel{position:relative;isolation:isolate;display:block;overflow:hidden;min-height:clamp(560px,62vw,760px);border:1px solid #24344d;border-radius:12px;background:#041222;transition:border-color .25s,transform .3s}
+.cinematic-panel:hover{border-color:#7595c8;transform:translateY(-3px)}
+.feature-visual{position:absolute;inset:0;background-image:url("assets/ocean-reef.svg");background-position:center;background-size:cover;transform:scale(1.01);transition:transform .9s}
+.cinematic-panel:hover .feature-visual{transform:scale(1.045)}
+.feature-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,5,14,.97) 0%,rgba(2,6,16,.83) 35%,rgba(2,8,20,.24) 85%),linear-gradient(0deg,rgba(2,5,14,.7),transparent 70%)}
+.feature-copy{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:inherit;max-width:760px;padding:clamp(36px,6vw,100px)}
+.feature-copy h2{font-size:clamp(2.7rem,6vw,6.4rem);line-height:1.05;letter-spacing:-.055em;margin:26px 0}
+.feature-copy h2 em{font-style:normal;color:#a5d6f5}
+.feature-copy p{font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.8;max-width:540px;color:#e1e8f3}
+.feature-cta{display:inline-flex;gap:25px;align-items:center;margin-top:35px;border-bottom:1px solid #9bcaff;padding-bottom:10px;font-weight:800;color:#c5e7ff}
+.feature-caption{display:flex;justify-content:space-between;gap:20px;color:#898ca4;font-size:.78rem;letter-spacing:.08em;margin-top:18px}
+@media(max-width:760px){.feature-section{margin-top:100px;padding-top:85px}.feature-index{display:none}.cinematic-panel{min-height:620px}.feature-shade{background:linear-gradient(0deg,rgba(2,5,14,.98) 0%,rgba(2,5,14,.76) 55%,rgba(2,5,14,.25) 100%)}.feature-copy{justify-content:flex-end;padding:32px}.feature-copy h2{font-size:clamp(2.65rem,10vw,4.5rem)}.feature-caption{flex-direction:column;gap:3px}}
