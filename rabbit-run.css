@@ -67,12 +67,12 @@
   36%{left:30%;top:48%;transform:translate(0,2px) scale(1);opacity:1}
   54%{left:48%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}
   72%{left:65%;top:48%;transform:translate(0,2px) scale(.98);opacity:1}
-  86%{left:calc(90% - clamp(95px,14vw,155px)*.5 - clamp(110px,13vw,160px)*.5);top:51%;transform:translate(0,0) scale(.68);opacity:1}
-  100%{left:calc(90% - clamp(95px,14vw,155px)*.5 - clamp(110px,13vw,160px)*.5);top:54%;transform:translate(0,0) scale(0);opacity:0}
+  86%{left:calc(90% - 125px);top:51%;transform:translate(0,0) scale(.68);opacity:1}
+  100%{left:calc(90% - 125px);top:54%;transform:translate(0,0) scale(0);opacity:0}
 }
 @media(max-width:760px){@keyframes rabbit-enter-hole{
   0%{left:0;top:52%;transform:translate(-110%,0) scale(1);opacity:1}
   65%{left:62%;top:52%;transform:translate(0,0) scale(.95);opacity:1}
-  86%{left:calc(92% - clamp(95px,14vw,155px)*.5 - clamp(110px,13vw,160px)*.5);top:54%;transform:translate(0,0) scale(.6);opacity:1}
-  100%{left:calc(92% - clamp(95px,14vw,155px)*.5 - clamp(110px,13vw,160px)*.5);top:57%;transform:translate(0,0) scale(0);opacity:0}
+  86%{left:calc(92% - 95px);top:54%;transform:translate(0,0) scale(.6);opacity:1}
+  100%{left:calc(92% - 95px);top:57%;transform:translate(0,0) scale(0);opacity:0}
 }}
