@@ -14,3 +14,15 @@
 /* Links from Radar cards to full articles */
 .article-link{display:inline-block;margin-top:10px;color:#a6d9ff;font-weight:750;text-decoration:underline;text-underline-offset:4px}
 .article-link:hover{color:#fff}
+
+/* Spacious editorial homepage: quiet, near-black intervals between chapters */
+body{background:#020308}
+.hero{min-height:min(83vh,820px);display:flex;flex-direction:column;justify-content:center;padding-top:clamp(130px,15vh,210px);padding-bottom:clamp(160px,20vh,270px)}
+.section{padding-top:clamp(95px,11vw,165px);padding-bottom:clamp(95px,11vw,165px)}
+#mission{margin-top:clamp(110px,15vw,220px);border-top:1px solid #121323}
+#radar,#evidence{margin-top:clamp(120px,16vw,250px);border-top:1px solid #121323}
+#mission>p:not(.eyebrow){font-size:clamp(1.08rem,1.65vw,1.3rem);line-height:1.9;max-width:720px}
+#radar .cards,#evidence .cards{margin-top:clamp(40px,5vw,75px);gap:clamp(20px,3vw,40px)}
+#radar .card,#evidence .card{background:#111422;border-color:#22283a}
+footer{margin-top:clamp(110px,15vw,220px);background:#020308}
+@media(max-width:760px){.hero{min-height:72vh;padding-top:100px;padding-bottom:120px}.section{padding-top:85px;padding-bottom:85px}#mission{margin-top:90px}#radar,#evidence{margin-top:100px}footer{margin-top:100px}}
