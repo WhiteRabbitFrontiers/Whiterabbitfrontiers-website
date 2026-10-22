@@ -6,6 +6,7 @@
   <meta name="description" content="White Rabbit Frontiers: independent editorial on frontier science, emerging technology, and the edges of what becomes possible." />
   <title>White Rabbit Frontiers</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="rabbit-run.css" />
 </head>
 <body>
   <header class="site-header">
@@ -14,11 +15,33 @@
   </header>
   <main>
     <section class="hero"><p class="eyebrow">INDEPENDENT FRONTIER INTELLIGENCE</p><h1>The future is already <em>leaking through.</em></h1><p>At the intersection of AI, biology, physics, and human possibility, we follow the ideas that could redraw the map.</p><a class="button" href="#radar">Explore the Radar ↗</a></section>
+
+    <section class="rabbit-run" aria-label="The Rabbit Run: a silent animated rabbit follows a trail into a glowing rabbit hole">
+      <div class="rabbit-run-inner">
+        <p class="rabbit-run-label">A LITTLE WONDER BETWEEN THE WORLDS</p>
+        <button class="rabbit-replay" type="button" aria-label="Replay rabbit animation">↻ Replay</button>
+        <div class="rabbit-quote" aria-label="The future is already leaking through."><span style="--word-index:0">The</span><span style="--word-index:1">future</span><span style="--word-index:2">is</span><span style="--word-index:3">already</span><span style="--word-index:4">leaking</span><span style="--word-index:5">through.</span></div>
+        <div class="rabbit-track" aria-hidden="true"></div>
+        <div class="rabbit-runner" aria-hidden="true">
+          <svg viewBox="0 0 130 105" xmlns="http://www.w3.org/2000/svg" role="presentation">
+            <defs><linearGradient id="rabbit-fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f9ff"/><stop offset=".55" stop-color="#b5dafa"/><stop offset="1" stop-color="#7b88cf"/></linearGradient></defs>
+            <path d="M83 39 Q76 21 78 4 Q91 5 98 35 Q97 12 109 2 Q118 14 107 42 Q119 50 119 60 Q115 73 99 71 Q91 86 76 86 L56 84 Q39 95 21 94 L8 91 Q6 86 16 83 L39 73 Q31 64 35 53 Q42 40 62 41 Q72 33 83 39Z" fill="url(#rabbit-fur)" stroke="#b2e6ff" stroke-width="2.2"/>
+            <path d="M54 79 Q66 83 75 86 L91 97 Q97 101 108 97 L103 92 L88 85" fill="url(#rabbit-fur)" stroke="#b2e6ff" stroke-width="2"/>
+            <path d="M40 77 L20 87 Q10 92 4 87" fill="none" stroke="#d8eeff" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="111" cy="53" r="2.6" fill="#1a1641"/><circle cx="118" cy="60" r="2" fill="#f4a9c7"/>
+            <circle cx="34" cy="54" r="10" fill="#e6f5ff"/>
+          </svg>
+        </div>
+        <div class="rabbit-hole" aria-hidden="true"></div>
+        <div class="rabbit-run-finish"><a href="#mission">Follow the Rabbit ↗</a></div>
+      </div>
+    </section>
     <section id="mission" class="section"><p class="eyebrow">OUR MISSION</p><h2>Curiosity with a compass.</h2><p>White Rabbit Frontiers investigates emerging research with wonder, skepticism, and an eye for what comes next. We distinguish what science has established from what it is only beginning to imagine.</p></section>
     <section id="radar" class="section"><div class="radar-heading"><div><p class="eyebrow">THE RADAR</p><h2>Signals worth following</h2></div><img class="radar-logo" src="wrr-logo.jpg" alt="White Rabbit Radar logo" width="180" height="180" loading="lazy" /></div><div class="cards"><article class="card"><span class="tag emerging">Emerging</span><h3>AI × Biology</h3><p>When computation meets living systems, new questions emerge about health, intelligence, and agency.</p></article><article class="card"><span class="tag emerging">Emerging</span><h3>The Ocean Is Becoming Readable</h3><p>From reef soundscapes to environmental DNA and satellite alerts, discover how scientists are learning to interpret living ecosystems.</p><a class="article-link" href="articles/ocean-becoming-readable.html">Read the story ↗</a></article><article class="card"><span class="tag speculative">Speculative</span><h3>The Writable World</h3><p>If we can read complex systems more deeply, what would it take to change them responsibly?</p></article></div><p class="note">Editorial previews, not claims of completed scientific breakthroughs. Full research articles and source links are coming next.</p></section>
     <section id="evidence" class="section"><p class="eyebrow">HOW WE LABEL CLAIMS</p><h2>Three levels of evidence</h2><div class="cards"><article class="card"><span class="tag established">Established</span><h3>Replicated or well-supported</h3><p>Claims grounded in substantial evidence and scientific consensus.</p></article><article class="card"><span class="tag emerging">Emerging</span><h3>Promising, not settled</h3><p>Early findings that deserve attention and independent validation.</p></article><article class="card"><span class="tag speculative">Speculative</span><h3>Frontier hypotheses</h3><p>Interesting possibilities clearly separated from demonstrated facts.</p></article></div></section>
   </main>
   <footer>© <span id="year"></span> White Rabbit Frontiers · Stay curious.</footer>
   <script src="script.js"></script>
+  <script src="rabbit-run.js" defer></script>
 </body>
 </html>
