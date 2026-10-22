@@ -41,3 +41,14 @@
 @keyframes rabbit-sprint{0%{left:0;top:48%;transform:translate(-110%,0) scale(1);opacity:1}65%{left:64%;top:48%;transform:translate(0,0) scale(1);opacity:1}80%{left:76%;top:51%;transform:translate(0,5%) scale(.8);opacity:1}100%{left:81%;top:58%;transform:translate(0,38%) scale(.04);opacity:0}}
 @media(max-width:760px){.rabbit-quote{top:28%;left:6%;width:90%;font-size:clamp(1.02rem,4.2vw,1.55rem)}}
 @media(prefers-reduced-motion:reduce){.rabbit-run .rabbit-quote .quote-letter{opacity:1!important;transform:none!important}}
+
+/* V4: original White Rabbit Frontiers rabbit, no cartoon bounce */
+.rabbit-runner{width:clamp(110px,13vw,160px);height:clamp(108px,13vw,160px);filter:drop-shadow(0 0 8px #7298ff55);overflow:hidden}
+.rabbit-art{width:100%;height:100%;background-image:url("wrf-logo.jpg");background-repeat:no-repeat;background-size:100% auto;background-position:center top;mix-blend-mode:screen}
+.rabbit-run.is-playing .rabbit-runner{animation:rabbit-real-run 2.05s cubic-bezier(.35,.05,.65,.95) forwards}
+.rabbit-run.is-playing .rabbit-runner svg{animation:none}
+@keyframes rabbit-real-run{0%{left:0;top:48%;transform:translate(-110%,3px) scale(1);opacity:1}16%{left:13%;top:46%;transform:translate(0,-3px) scale(1);opacity:1}33%{left:28%;top:48%;transform:translate(0,2px) scale(1);opacity:1}50%{left:45%;top:46%;transform:translate(0,-4px) scale(1);opacity:1}68%{left:63%;top:48%;transform:translate(0,2px) scale(.98);opacity:1}83%{left:76%;top:52%;transform:translate(0,8px) scale(.72);opacity:1}100%{left:81%;top:58%;transform:translate(0,30px) scale(.04);opacity:0}}
+.rabbit-quote .quote-letter{opacity:0}
+.rabbit-run.is-playing .rabbit-quote .quote-letter{opacity:0}
+.rabbit-run.is-finished .rabbit-quote .quote-letter{opacity:0}
+@media(prefers-reduced-motion:reduce){.rabbit-run .rabbit-quote .quote-letter{opacity:1!important}.rabbit-run .rabbit-runner{left:45%;top:49%;transform:none!important;opacity:1!important}}
