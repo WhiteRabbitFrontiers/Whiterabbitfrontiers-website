@@ -76,3 +76,7 @@
   86%{left:calc(92% - 95px);top:54%;transform:translate(0,0) scale(.6);opacity:1}
   100%{left:calc(92% - 95px);top:57%;transform:translate(0,0) scale(0);opacity:0}
 }}
+
+/* V7: crop the original artwork to the rabbit only. No logo lettering in the run. */
+.rabbit-runner{height:clamp(76px,9vw,112px);width:clamp(110px,13vw,160px);overflow:hidden}
+.rabbit-art{width:100%;height:100%;background-image:url("wrf-logo.jpg");background-repeat:no-repeat;background-size:100% auto;background-position:center top;mix-blend-mode:screen}
