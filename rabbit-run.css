@@ -52,3 +52,7 @@
 .rabbit-run.is-playing .rabbit-quote .quote-letter{opacity:0}
 .rabbit-run.is-finished .rabbit-quote .quote-letter{opacity:0}
 @media(prefers-reduced-motion:reduce){.rabbit-run .rabbit-quote .quote-letter{opacity:1!important}.rabbit-run .rabbit-runner{left:45%;top:49%;transform:none!important;opacity:1!important}}
+
+/* V5: slower, more natural gait without changing the lovely letter cascade. */
+.rabbit-run.is-playing .rabbit-runner{animation:rabbit-natural-run 2.75s cubic-bezier(.38,.08,.62,.95) forwards}
+@keyframes rabbit-natural-run{0%{left:0;top:48%;transform:translate(-110%,2px) scale(1);opacity:1}18%{left:14%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}36%{left:30%;top:48%;transform:translate(0,2px) scale(1);opacity:1}54%{left:48%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}73%{left:66%;top:48%;transform:translate(0,2px) scale(.98);opacity:1}87%{left:76%;top:52%;transform:translate(0,8px) scale(.72);opacity:1}100%{left:81%;top:58%;transform:translate(0,30px) scale(.04);opacity:0}}
