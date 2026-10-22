@@ -26,3 +26,18 @@
 @media(max-width:760px){.rabbit-run{min-height:380px}.rabbit-run-inner{height:380px}.rabbit-quote{top:27%;left:7%;width:85%;gap:.22em}.rabbit-hole{right:8%;top:57%}.rabbit-track{top:65%}.rabbit-runner{top:52%}.rabbit-run-label{top:26px}.rabbit-replay{top:20px}.rabbit-run-finish{bottom:22px}.rabbit-run.is-playing .rabbit-quote span{animation-name:quote-tumble-mobile}}
 @keyframes quote-tumble-mobile{0%,30%{opacity:1;transform:translate(0,0) rotate(0) scale(1)}65%{opacity:1;transform:translate(20vw,14vw) rotate(14deg) scale(.7)}100%{opacity:0;transform:translate(38vw,30vw) rotate(110deg) scale(.05)}}
 @media(prefers-reduced-motion:reduce){.rabbit-run .rabbit-runner,.rabbit-run .rabbit-quote span,.rabbit-run .rabbit-run-finish{animation:none!important}.rabbit-run .rabbit-runner{left:42%;top:50%;transform:none;opacity:1}.rabbit-run .rabbit-run-finish{opacity:1;pointer-events:auto}.rabbit-run .rabbit-quote{top:25%}.rabbit-replay{display:none}}
+
+/* V2: fast WRF-colored rabbit and a true character-by-character reverse cascade */
+.rabbit-quote{top:29%;left:7%;width:86%;display:block;white-space:normal;line-height:1.4;max-width:880px;pointer-events:none}
+.rabbit-quote .quote-word{display:inline-block;white-space:nowrap;margin-right:.26em}
+.rabbit-quote .quote-letter{display:inline-block;position:relative;white-space:pre;text-shadow:0 0 15px #697cff55;will-change:transform,opacity}
+.rabbit-quote .quote-letter:nth-child(3n){color:#a7dcff}
+.rabbit-quote .quote-letter:nth-child(4n){color:#d6b7ff}
+.rabbit-run.is-playing .rabbit-runner{animation:rabbit-sprint 2.2s cubic-bezier(.45,.1,.65,.95) forwards}
+.rabbit-run.is-playing .rabbit-runner svg{animation:rabbit-hop .21s ease-in-out 9}
+.rabbit-run.is-playing .rabbit-quote span{animation:none}
+.rabbit-run.is-playing .rabbit-run-finish{animation:none}
+.rabbit-run.is-finished .rabbit-quote .quote-letter{opacity:0}
+@keyframes rabbit-sprint{0%{left:0;top:48%;transform:translate(-110%,0) scale(1);opacity:1}65%{left:64%;top:48%;transform:translate(0,0) scale(1);opacity:1}80%{left:76%;top:51%;transform:translate(0,5%) scale(.8);opacity:1}100%{left:81%;top:58%;transform:translate(0,38%) scale(.04);opacity:0}}
+@media(max-width:760px){.rabbit-quote{top:28%;left:6%;width:90%;font-size:clamp(1.02rem,4.2vw,1.55rem)}}
+@media(prefers-reduced-motion:reduce){.rabbit-run .rabbit-quote .quote-letter{opacity:1!important;transform:none!important}}
