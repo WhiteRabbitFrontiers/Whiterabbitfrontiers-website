@@ -62,8 +62,8 @@
     void scene.offsetWidth;
     scene.classList.add('is-playing');
     later(reveal,150);
-    later(fall,2350);
-    later(finish,2350+850+(letters.length-1)*86+450);
+    later(fall,2950);
+    later(finish,2950+850+(letters.length-1)*86+450);
   }
   replay.addEventListener('click',play);
   reduced.addEventListener?.('change',()=>{reset();if(reduced.matches)finish();});
