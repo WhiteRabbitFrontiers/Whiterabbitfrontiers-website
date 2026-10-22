@@ -56,3 +56,23 @@
 /* V5: slower, more natural gait without changing the lovely letter cascade. */
 .rabbit-run.is-playing .rabbit-runner{animation:rabbit-natural-run 2.75s cubic-bezier(.38,.08,.62,.95) forwards}
 @keyframes rabbit-natural-run{0%{left:0;top:48%;transform:translate(-110%,2px) scale(1);opacity:1}18%{left:14%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}36%{left:30%;top:48%;transform:translate(0,2px) scale(1);opacity:1}54%{left:48%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}73%{left:66%;top:48%;transform:translate(0,2px) scale(.98);opacity:1}87%{left:76%;top:52%;transform:translate(0,8px) scale(.72);opacity:1}100%{left:81%;top:58%;transform:translate(0,30px) scale(.04);opacity:0}}
+
+/* V6: the hole is in front of the rabbit, so the rabbit vanishes INTO it. */
+.rabbit-hole{z-index:6}
+.rabbit-runner{z-index:4}
+.rabbit-run.is-playing .rabbit-runner{animation:rabbit-enter-hole 2.75s cubic-bezier(.38,.08,.62,.95) forwards}
+@keyframes rabbit-enter-hole{
+  0%{left:0;top:48%;transform:translate(-110%,2px) scale(1);opacity:1}
+  18%{left:14%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}
+  36%{left:30%;top:48%;transform:translate(0,2px) scale(1);opacity:1}
+  54%{left:48%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}
+  72%{left:65%;top:48%;transform:translate(0,2px) scale(.98);opacity:1}
+  86%{left:calc(90% - clamp(95px,14vw,155px)*.5 - clamp(110px,13vw,160px)*.5);top:51%;transform:translate(0,0) scale(.68);opacity:1}
+  100%{left:calc(90% - clamp(95px,14vw,155px)*.5 - clamp(110px,13vw,160px)*.5);top:54%;transform:translate(0,0) scale(0);opacity:0}
+}
+@media(max-width:760px){@keyframes rabbit-enter-hole{
+  0%{left:0;top:52%;transform:translate(-110%,0) scale(1);opacity:1}
+  65%{left:62%;top:52%;transform:translate(0,0) scale(.95);opacity:1}
+  86%{left:calc(92% - clamp(95px,14vw,155px)*.5 - clamp(110px,13vw,160px)*.5);top:54%;transform:translate(0,0) scale(.6);opacity:1}
+  100%{left:calc(92% - clamp(95px,14vw,155px)*.5 - clamp(110px,13vw,160px)*.5);top:57%;transform:translate(0,0) scale(0);opacity:0}
+}}
