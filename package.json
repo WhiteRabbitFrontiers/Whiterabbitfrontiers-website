@@ -1,5 +1,5 @@
 {
-  "name": "v8-app-template",
+  "name": "white-rabbit-frontiers-static",
   "version": "1.0.0",
   "type": "module",
   "imports": {
@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vite build --ssr src/server/entry.ts",
+    "build": "node -e \"require('fs').mkdirSync('dist',{recursive:true});require('fs').copyFileSync('index.html','dist/index.html')\"",
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
