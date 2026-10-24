@@ -1,0 +1,62 @@
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:#f3f1ff;background:#090b15;scroll-behavior:smooth}*{box-sizing:border-box}body{margin:0;line-height:1.6}a{color:inherit;text-decoration:none}.site-header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px max(6vw,20px);border-bottom:1px solid #25243b;flex-wrap:wrap}.brand{font-weight:800;letter-spacing:.12em;font-size:.85rem}.brand span:last-child{color:#9c95ff}.rabbit{color:#8ad6ff;font-size:1.3rem;margin-right:8px}nav{display:flex;gap:22px;color:#c4c2d5;font-size:.9rem}nav a:hover{color:white}.hero{padding:110px max(6vw,20px) 125px;background:radial-gradient(ellipse at 85% 30%,#292059 0,transparent 48%),radial-gradient(ellipse at 15% 85%,#102744 0,transparent 50%);max-width:100%}.hero h1{font-size:clamp(2.8rem,7vw,6.2rem);line-height:1.08;letter-spacing:-.055em;max-width:900px;margin:15px 0 28px}.hero h1 em{font-style:normal;color:#9e9bff}.hero>p:not(.eyebrow){max-width:650px;font-size:1.22rem;color:#c5c4d6}.eyebrow{color:#8ed4ff;font-weight:800;letter-spacing:.18em;font-size:.73rem}.button{display:inline-block;background:#a9a1ff;color:#101025;padding:13px 20px;border-radius:7px;font-weight:800;margin-top:20px}.button:hover{background:#c6c0ff}.section{padding:75px max(6vw,20px);max-width:1400px;margin:auto}.section h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:10px 0 22px}.section>p:not(.eyebrow){max-width:760px;color:#c6c4d8}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:35px}.card{background:#151727;border:1px solid #303148;border-radius:14px;padding:28px;min-height:220px}.card h3{font-size:1.3rem;margin:18px 0 8px}.card p,.note{color:#b9b8cb}.tag{font-size:.72rem;font-weight:800;letter-spacing:.07em;padding:6px 10px;border-radius:30px;display:inline-block}.established{background:#123c39;color:#9af0ce}.emerging{background:#25335a;color:#accbff}.speculative{background:#44304e;color:#f3c1fa}.note{font-size:.85rem;margin-top:25px}footer{padding:32px max(6vw,20px);border-top:1px solid #25243b;color:#9c9bad;font-size:.85rem}@media(max-width:760px){.cards{grid-template-columns:1fr}.hero{padding-top:80px;padding-bottom:90px}.site-header{align-items:flex-start}nav{gap:14px}}
+
+/* Original White Rabbit Frontiers artwork in the navigation header */
+.brand{display:inline-flex;align-items:center;gap:8px}
+.rabbit-logo{display:block;width:52px;height:52px;object-fit:cover;border-radius:10px;flex-shrink:0}
+@media(max-width:480px){.rabbit-logo{width:42px;height:42px}.brand{font-size:.72rem;letter-spacing:.08em}}
+
+/* Radar editorial identity */
+.radar-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.radar-heading h2{margin-bottom:0}
+.radar-logo{width:clamp(120px,16vw,180px);height:auto;aspect-ratio:1;object-fit:contain;border-radius:14px;flex-shrink:0}
+@media(max-width:760px){.radar-heading{align-items:flex-start}.radar-logo{width:128px}}
+
+/* Links from Radar cards to full articles */
+.article-link{display:inline-block;margin-top:10px;color:#a6d9ff;font-weight:750;text-decoration:underline;text-underline-offset:4px}
+.article-link:hover{color:#fff}
+
+/* Spacious editorial homepage: quiet, near-black intervals between chapters */
+body{background:#020308}
+.hero{min-height:min(83vh,820px);display:flex;flex-direction:column;justify-content:center;padding-top:clamp(130px,15vh,210px);padding-bottom:clamp(160px,20vh,270px)}
+.section{padding-top:clamp(95px,11vw,165px);padding-bottom:clamp(95px,11vw,165px)}
+#mission{margin-top:clamp(110px,15vw,220px);border-top:1px solid #121323}
+#radar,#evidence{margin-top:clamp(120px,16vw,250px);border-top:1px solid #121323}
+#mission>p:not(.eyebrow){font-size:clamp(1.08rem,1.65vw,1.3rem);line-height:1.9;max-width:720px}
+#radar .cards,#evidence .cards{margin-top:clamp(40px,5vw,75px);gap:clamp(20px,3vw,40px)}
+#radar .card,#evidence .card{background:#111422;border-color:#22283a}
+footer{margin-top:clamp(110px,15vw,220px);background:#020308}
+@media(max-width:760px){.hero{min-height:72vh;padding-top:100px;padding-bottom:120px}.section{padding-top:85px;padding-bottom:85px}#mission{margin-top:90px}#radar,#evidence{margin-top:100px}footer{margin-top:100px}}
+
+/* Cinematic editorial feature: generous negative space remains intact */
+.feature-section{max-width:1500px;margin:clamp(120px,16vw,250px) auto 0;padding:clamp(95px,11vw,165px) max(6vw,20px) 0;border-top:1px solid #121323}
+.feature-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:34px}
+.feature-index{font-size:.68rem;letter-spacing:.19em;color:#8588a5}
+.cinematic-panel{position:relative;isolation:isolate;display:block;overflow:hidden;min-height:clamp(560px,62vw,760px);border:1px solid #24344d;border-radius:12px;background:#041222;transition:border-color .25s,transform .3s}
+.cinematic-panel:hover{border-color:#7595c8;transform:translateY(-3px)}
+.feature-visual{position:absolute;inset:0;background-image:url("assets/ocean-reef.svg");background-position:center;background-size:cover;transform:scale(1.01);transition:transform .9s}
+.cinematic-panel:hover .feature-visual{transform:scale(1.045)}
+.feature-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,5,14,.97) 0%,rgba(2,6,16,.83) 35%,rgba(2,8,20,.24) 85%),linear-gradient(0deg,rgba(2,5,14,.7),transparent 70%)}
+.feature-copy{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:inherit;max-width:760px;padding:clamp(36px,6vw,100px)}
+.feature-copy h2{font-size:clamp(2.7rem,6vw,6.4rem);line-height:1.05;letter-spacing:-.055em;margin:26px 0}
+.feature-copy h2 em{font-style:normal;color:#a5d6f5}
+.feature-copy p{font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.8;max-width:540px;color:#e1e8f3}
+.feature-cta{display:inline-flex;gap:25px;align-items:center;margin-top:35px;border-bottom:1px solid #9bcaff;padding-bottom:10px;font-weight:800;color:#c5e7ff}
+.feature-caption{display:flex;justify-content:space-between;gap:20px;color:#898ca4;font-size:.78rem;letter-spacing:.08em;margin-top:18px}
+@media(max-width:760px){.feature-section{margin-top:100px;padding-top:85px}.feature-index{display:none}.cinematic-panel{min-height:620px}.feature-shade{background:linear-gradient(0deg,rgba(2,5,14,.98) 0%,rgba(2,5,14,.76) 55%,rgba(2,5,14,.25) 100%)}.feature-copy{justify-content:flex-end;padding:32px}.feature-copy h2{font-size:clamp(2.65rem,10vw,4.5rem)}.feature-caption{flex-direction:column;gap:3px}}
+
+/* Homepage Radar: compact illustrated siblings of the Library cards */
+#radar .radar-feature-cards{align-items:stretch;gap:clamp(20px,3vw,40px)}
+#radar .radar-feature-card{padding:0;overflow:hidden;min-height:0;background:linear-gradient(145deg,#101728,#080b15);border:1px solid #26334b;transition:transform .25s,border-color .25s,box-shadow .25s}
+#radar .radar-feature-card:hover,#radar .radar-feature-card:focus-within{transform:translateY(-4px);border-color:#7595c8;box-shadow:0 12px 35px #08152688}
+.radar-feature-link{display:flex;flex-direction:column;height:100%;color:inherit;text-decoration:none}
+.radar-feature-link:focus-visible{outline:3px solid #9bdcff;outline-offset:-4px;border-radius:12px}
+.radar-feature-art{height:clamp(155px,16vw,215px);background-color:#0b1630;background-position:center;background-size:cover;border-bottom:1px solid #26334b}
+.radar-art-cells{background-image:url("assets/cellular-clock.svg")}
+.radar-art-brain{background-image:url("assets/writable-brain.svg")}
+.radar-art-convergence{background-image:url("assets/frontiers-converge.svg")}
+.radar-feature-body{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:clamp(22px,2.6vw,32px)}
+#radar .radar-feature-body h3{margin:18px 0 8px;line-height:1.25;font-size:clamp(1.15rem,1.7vw,1.45rem)}
+#radar .radar-feature-body p{margin:0 0 22px;line-height:1.7;font-size:.96rem}
+#radar .radar-feature-body .article-link{margin-top:auto}
+@media(max-width:760px){.radar-feature-art{height:210px}}
+@media(prefers-reduced-motion:reduce){#radar .radar-feature-card{transition:none}#radar .radar-feature-card:hover{transform:none}}

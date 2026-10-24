@@ -1,0 +1,82 @@
+/* Silent rabbit-run interlude: intentional black breathing room */
+.rabbit-run{position:relative;min-height:clamp(390px,48vw,590px);background:#020308;overflow:hidden;isolation:isolate;border-top:1px solid #0e1220;border-bottom:1px solid #0e1220}
+.rabbit-run-inner{position:relative;width:min(1200px,100%);height:clamp(330px,43vw,525px);margin:auto}
+.rabbit-run-label{position:absolute;top:45px;left:clamp(20px,6vw,75px);color:#8a91ae;letter-spacing:.22em;font-size:.7rem;font-weight:800}
+.rabbit-track{position:absolute;left:7%;right:12%;top:61%;height:1px;background:linear-gradient(90deg,transparent,#32304766 20%,#4b3a5e66 80%,transparent)}
+.rabbit-runner{position:absolute;left:0;top:48%;width:clamp(56px,8vw,100px);height:clamp(56px,8vw,100px);color:#c9e9ff;filter:drop-shadow(0 0 9px #45baffaa);transform:translate(-110%,0);z-index:4;will-change:transform,opacity}
+.rabbit-runner svg{display:block;width:100%;height:100%}
+.rabbit-hole{position:absolute;right:10%;top:54%;width:clamp(95px,14vw,155px);height:clamp(52px,7vw,83px);border-radius:50%;background:radial-gradient(ellipse at 50% 54%,#030108 10%,#13071c 45%,#4c2469 70%,#d79a54 85%,#070309 100%);box-shadow:0 0 18px #8d4fc13d,0 0 38px #b8793d18,inset 0 0 20px #020006;transform:rotate(-13deg);z-index:3}
+.rabbit-hole:before{content:"";position:absolute;inset:-12px;border:1px solid #9265ab33;border-radius:50%;transform:scale(.95,.85)}
+.rabbit-quote{position:absolute;top:30%;left:7%;width:76%;display:flex;flex-wrap:wrap;gap:.35em;align-items:center;font-family:Georgia,serif;font-style:italic;font-size:clamp(1.12rem,2.8vw,2.3rem);color:#c4b7ff;z-index:2}
+.rabbit-quote span{display:inline-block;white-space:nowrap;text-shadow:0 0 20px #8a70ff50;transform-origin:center;will-change:transform,opacity}
+.rabbit-run-finish{position:absolute;bottom:clamp(25px,5vw,60px);left:50%;transform:translateX(-50%);text-align:center;opacity:0;pointer-events:none;z-index:5}
+.rabbit-run-finish a{display:inline-block;border:1px solid #68599e;padding:12px 22px;border-radius:30px;color:#d7cfff;background:#0e0b19;white-space:nowrap}
+.rabbit-run-finish a:hover{border-color:#b5a2ff;background:#1a1430}
+.rabbit-replay{position:absolute;right:clamp(20px,6vw,75px);top:36px;border:1px solid #383149;background:#0c0b16;color:#c8c0e5;border-radius:20px;padding:8px 15px;font:inherit;font-size:.8rem;cursor:pointer;z-index:7}
+.rabbit-replay:hover,.rabbit-replay:focus-visible{border-color:#a79af7;color:white}
+.rabbit-run:not(.is-playing) .rabbit-run-finish,.rabbit-run.is-finished .rabbit-run-finish{opacity:1;pointer-events:auto}
+.rabbit-run.is-playing .rabbit-runner{animation:rabbit-cross 7.8s linear forwards}
+.rabbit-run.is-playing .rabbit-runner svg{animation:rabbit-hop .48s ease-in-out 11}
+.rabbit-run.is-playing .rabbit-quote span{animation:quote-tumble 2.7s ease-in forwards;animation-delay:calc(3.9s + var(--word-index)*.28s)}
+.rabbit-run.is-playing .rabbit-run-finish{animation:finish-appear .65s ease 8s forwards}
+@keyframes rabbit-cross{0%{left:0;top:48%;transform:translate(-110%,0) scale(1);opacity:1}12%{left:12%;top:48%;transform:translate(0,0) scale(1)}65%{left:64%;top:48%;transform:translate(0,0) scale(1)}79%{left:76%;top:52%;transform:translate(0,5%) scale(.84);opacity:1}89%{left:80%;top:55%;transform:translate(0,25%) scale(.38);opacity:1}94%,100%{left:81%;top:58%;transform:translate(0,40%) scale(.05);opacity:0}}
+@keyframes rabbit-hop{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-21px) rotate(-5deg)}}
+@keyframes quote-tumble{0%,30%{opacity:1;transform:translate(0,0) rotate(0) scale(1)}65%{opacity:1;transform:translate(15vw,5vw) rotate(12deg) scale(.8)}100%{opacity:0;transform:translate(39vw,12vw) rotate(110deg) scale(.05)}}
+@keyframes finish-appear{to{opacity:1;pointer-events:auto}}
+@media(max-width:760px){.rabbit-run{min-height:380px}.rabbit-run-inner{height:380px}.rabbit-quote{top:27%;left:7%;width:85%;gap:.22em}.rabbit-hole{right:8%;top:57%}.rabbit-track{top:65%}.rabbit-runner{top:52%}.rabbit-run-label{top:26px}.rabbit-replay{top:20px}.rabbit-run-finish{bottom:22px}.rabbit-run.is-playing .rabbit-quote span{animation-name:quote-tumble-mobile}}
+@keyframes quote-tumble-mobile{0%,30%{opacity:1;transform:translate(0,0) rotate(0) scale(1)}65%{opacity:1;transform:translate(20vw,14vw) rotate(14deg) scale(.7)}100%{opacity:0;transform:translate(38vw,30vw) rotate(110deg) scale(.05)}}
+@media(prefers-reduced-motion:reduce){.rabbit-run .rabbit-runner,.rabbit-run .rabbit-quote span,.rabbit-run .rabbit-run-finish{animation:none!important}.rabbit-run .rabbit-runner{left:42%;top:50%;transform:none;opacity:1}.rabbit-run .rabbit-run-finish{opacity:1;pointer-events:auto}.rabbit-run .rabbit-quote{top:25%}.rabbit-replay{display:none}}
+
+/* V2: fast WRF-colored rabbit and a true character-by-character reverse cascade */
+.rabbit-quote{top:29%;left:7%;width:86%;display:block;white-space:normal;line-height:1.4;max-width:880px;pointer-events:none}
+.rabbit-quote .quote-word{display:inline-block;white-space:nowrap;margin-right:.26em}
+.rabbit-quote .quote-letter{display:inline-block;position:relative;white-space:pre;text-shadow:0 0 15px #697cff55;will-change:transform,opacity}
+.rabbit-quote .quote-letter:nth-child(3n){color:#a7dcff}
+.rabbit-quote .quote-letter:nth-child(4n){color:#d6b7ff}
+.rabbit-run.is-playing .rabbit-runner{animation:rabbit-sprint 2.2s cubic-bezier(.45,.1,.65,.95) forwards}
+.rabbit-run.is-playing .rabbit-runner svg{animation:rabbit-hop .21s ease-in-out 9}
+.rabbit-run.is-playing .rabbit-quote span{animation:none}
+.rabbit-run.is-playing .rabbit-run-finish{animation:none}
+.rabbit-run.is-finished .rabbit-quote .quote-letter{opacity:0}
+@keyframes rabbit-sprint{0%{left:0;top:48%;transform:translate(-110%,0) scale(1);opacity:1}65%{left:64%;top:48%;transform:translate(0,0) scale(1);opacity:1}80%{left:76%;top:51%;transform:translate(0,5%) scale(.8);opacity:1}100%{left:81%;top:58%;transform:translate(0,38%) scale(.04);opacity:0}}
+@media(max-width:760px){.rabbit-quote{top:28%;left:6%;width:90%;font-size:clamp(1.02rem,4.2vw,1.55rem)}}
+@media(prefers-reduced-motion:reduce){.rabbit-run .rabbit-quote .quote-letter{opacity:1!important;transform:none!important}}
+
+/* V4: original White Rabbit Frontiers rabbit, no cartoon bounce */
+.rabbit-runner{width:clamp(110px,13vw,160px);height:clamp(108px,13vw,160px);filter:drop-shadow(0 0 8px #7298ff55);overflow:hidden}
+.rabbit-art{width:100%;height:100%;background-image:url("wrf-logo.jpg");background-repeat:no-repeat;background-size:100% auto;background-position:center top;mix-blend-mode:screen}
+.rabbit-run.is-playing .rabbit-runner{animation:rabbit-real-run 2.05s cubic-bezier(.35,.05,.65,.95) forwards}
+.rabbit-run.is-playing .rabbit-runner svg{animation:none}
+@keyframes rabbit-real-run{0%{left:0;top:48%;transform:translate(-110%,3px) scale(1);opacity:1}16%{left:13%;top:46%;transform:translate(0,-3px) scale(1);opacity:1}33%{left:28%;top:48%;transform:translate(0,2px) scale(1);opacity:1}50%{left:45%;top:46%;transform:translate(0,-4px) scale(1);opacity:1}68%{left:63%;top:48%;transform:translate(0,2px) scale(.98);opacity:1}83%{left:76%;top:52%;transform:translate(0,8px) scale(.72);opacity:1}100%{left:81%;top:58%;transform:translate(0,30px) scale(.04);opacity:0}}
+.rabbit-quote .quote-letter{opacity:0}
+.rabbit-run.is-playing .rabbit-quote .quote-letter{opacity:0}
+.rabbit-run.is-finished .rabbit-quote .quote-letter{opacity:0}
+@media(prefers-reduced-motion:reduce){.rabbit-run .rabbit-quote .quote-letter{opacity:1!important}.rabbit-run .rabbit-runner{left:45%;top:49%;transform:none!important;opacity:1!important}}
+
+/* V5: slower, more natural gait without changing the lovely letter cascade. */
+.rabbit-run.is-playing .rabbit-runner{animation:rabbit-natural-run 2.75s cubic-bezier(.38,.08,.62,.95) forwards}
+@keyframes rabbit-natural-run{0%{left:0;top:48%;transform:translate(-110%,2px) scale(1);opacity:1}18%{left:14%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}36%{left:30%;top:48%;transform:translate(0,2px) scale(1);opacity:1}54%{left:48%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}73%{left:66%;top:48%;transform:translate(0,2px) scale(.98);opacity:1}87%{left:76%;top:52%;transform:translate(0,8px) scale(.72);opacity:1}100%{left:81%;top:58%;transform:translate(0,30px) scale(.04);opacity:0}}
+
+/* V6: the hole is in front of the rabbit, so the rabbit vanishes INTO it. */
+.rabbit-hole{z-index:6}
+.rabbit-runner{z-index:4}
+.rabbit-run.is-playing .rabbit-runner{animation:rabbit-enter-hole 2.75s cubic-bezier(.38,.08,.62,.95) forwards}
+@keyframes rabbit-enter-hole{
+  0%{left:0;top:48%;transform:translate(-110%,2px) scale(1);opacity:1}
+  18%{left:14%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}
+  36%{left:30%;top:48%;transform:translate(0,2px) scale(1);opacity:1}
+  54%{left:48%;top:47%;transform:translate(0,-1px) scale(1);opacity:1}
+  72%{left:65%;top:48%;transform:translate(0,2px) scale(.98);opacity:1}
+  86%{left:calc(90% - 125px);top:51%;transform:translate(0,0) scale(.68);opacity:1}
+  100%{left:calc(90% - 125px);top:54%;transform:translate(0,0) scale(0);opacity:0}
+}
+@media(max-width:760px){@keyframes rabbit-enter-hole{
+  0%{left:0;top:52%;transform:translate(-110%,0) scale(1);opacity:1}
+  65%{left:62%;top:52%;transform:translate(0,0) scale(.95);opacity:1}
+  86%{left:calc(92% - 95px);top:54%;transform:translate(0,0) scale(.6);opacity:1}
+  100%{left:calc(92% - 95px);top:57%;transform:translate(0,0) scale(0);opacity:0}
+}}
+
+/* V7: crop the original artwork to the rabbit only. No logo lettering in the run. */
+.rabbit-runner{height:clamp(76px,9vw,112px);width:clamp(110px,13vw,160px);overflow:hidden}
+.rabbit-art{width:100%;height:100%;background-image:url("wrf-logo.jpg");background-repeat:no-repeat;background-size:100% auto;background-position:center top;mix-blend-mode:screen}

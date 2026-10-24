@@ -1,28 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <script>
-      (function () {
-        try {
-          var u = new URL(location.href);
-          if (u.searchParams.has('airoShareToken')) {
-            u.searchParams.delete('airoShareToken');
-            history.replaceState(null, '', u.toString());
-          }
-        } catch (e) {}
-      })();
-    </script>
-    <meta name="referrer" content="same-origin" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--app-head-->
-    <script src="/airo-video-slots.js"></script>
-    <script src="/airo-logo-orientation.js"></script>
-  </head>
-  <body class="fs-unmask-airo-app-builder">
-    <div id="app" class="fs-unmask-airo-app-builder"><!--app-html--></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script src="/analytics.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="White Rabbit Frontiers: independent editorial on frontier science, emerging technology, and the edges of what becomes possible." />
+  <title>White Rabbit Frontiers</title>
+  <link rel="stylesheet" href="styles.css?v=13" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="rabbit-logo" src="wrf-logo.jpg" alt="" width="52" height="52" /> WHITE RABBIT <span>FRONTIERS</span></a>
+    <nav aria-label="Main navigation"><a href="#mission">Mission</a><a href="#featured">Featured</a><a href="radar-library.html">Radar Library</a><a href="#evidence">Evidence</a></nav>
+  </header>
+  <main>
+    <section class="hero"><p class="eyebrow">INDEPENDENT FRONTIER INTELLIGENCE</p><h1>The future is already <em>leaking through.</em></h1><p>At the intersection of AI, biology, physics, and human possibility, we follow the ideas that could redraw the map.</p><a class="button" href="#radar">Explore the Radar ↗</a></section>
+
+    <section id="mission" class="section"><p class="eyebrow">OUR MISSION</p><h2>Curiosity with a compass.</h2><p>White Rabbit Frontiers investigates emerging research with wonder, skepticism, and an eye for what comes next. We distinguish what science has established from what it is only beginning to imagine.</p></section>
+
+    <section id="featured" class="feature-section" aria-labelledby="feature-title">
+      <div class="feature-heading"><p class="eyebrow">FEATURED FRONTIER · PLANETARY PERCEPTION</p><p class="feature-index">01 / THE LIVING PLANET</p></div>
+      <a class="cinematic-panel" href="articles/ocean-becoming-readable.html" aria-label="Read The Ocean Is Becoming Readable">
+        <div class="feature-visual" role="img" aria-label="Illustration of a glowing underwater reef"></div>
+        <div class="feature-shade"></div>
+        <div class="feature-copy"><span class="tag emerging">Emerging science</span><h2 id="feature-title">The Ocean Is<br><em>Becoming Readable.</em></h2><p>Reef soundscapes. Environmental DNA. Satellites that listen for change. The planet is beginning to tell us its story in data.</p><span class="feature-cta">Enter the story <span aria-hidden="true">↗</span></span></div>
+      </a>
+      <p class="feature-caption">A White Rabbit Radar deep dive <span>✦</span> Evidence before wonder, wonder always.</p>
+    </section>
+    <section id="radar" class="section"><div class="radar-heading"><div><p class="eyebrow">THE RADAR</p><h2>Signals worth following</h2></div><img class="radar-logo" src="wrr-logo-black.png" alt="White Rabbit Radar logo" width="180" height="180" loading="lazy" /></div><div class="cards radar-feature-cards"><article class="card radar-feature-card"><a class="radar-feature-link" href="articles/rewriting-cellular-clock.html"><div class="radar-feature-art radar-art-cells" role="img" aria-label="Original conceptual illustration for Rewriting the Cellular Clock"></div><div class="radar-feature-body"><span class="tag emerging">Emerging</span><h3>Rewriting the Cellular Clock</h3><p>Can blood-derived cells acquire a younger molecular identity? The promise and limits of a remarkable laboratory result.</p><span class="article-link">Read the investigation ↗</span></div></a></article><article class="card radar-feature-card"><a class="radar-feature-link" href="articles/the-writable-brain.html"><div class="radar-feature-art radar-art-brain" role="img" aria-label="Original conceptual illustration for The Writable Brain"></div><div class="radar-feature-body"><span class="tag emerging">Emerging</span><h3>The Writable Brain</h3><p>Speech-restoring interfaces and responsive stimulation bring new meaning to neural agency.</p><span class="article-link">Read the investigation ↗</span></div></a></article><article class="card radar-feature-card"><a class="radar-feature-link" href="articles/when-frontiers-converge.html"><div class="radar-feature-art radar-art-convergence" role="img" aria-label="Original conceptual illustration for When Frontiers Converge"></div><div class="radar-feature-body"><span class="tag speculative">Exploratory thesis</span><h3>When Frontiers Converge</h3><p>When AI, biology, sensors and robotics connect, what can they actually accomplish together?</p><span class="article-link">Read the perspective ↗</span></div></a></article></div><p class="note">Explore our four illustrated investigations, including the ocean feature above. Each distinguishes demonstrated research from emerging possibilities. <a class="article-link" href="radar-library.html">Explore the Radar Library ↗</a></p></section>
+        <section id="evidence" class="section"><p class="eyebrow">HOW WE LABEL CLAIMS</p><h2>Three levels of evidence</h2><div class="cards"><article class="card"><span class="tag established">Established</span><h3>Replicated or well-supported</h3><p>Claims grounded in substantial evidence and scientific consensus.</p></article><article class="card"><span class="tag emerging">Emerging</span><h3>Promising, not settled</h3><p>Early findings that deserve attention and independent validation.</p></article><article class="card"><span class="tag speculative">Speculative</span><h3>Frontier hypotheses</h3><p>Interesting possibilities clearly separated from demonstrated facts.</p></article></div></section>
+  </main>
+  <footer>© <span id="year"></span> White Rabbit Frontiers · Stay curious.</footer>
+  <script src="script.js"></script>
+</body>
 </html>
