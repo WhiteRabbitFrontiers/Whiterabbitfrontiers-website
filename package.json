@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});for(const f of ['index.html','radar.html','ocean-readable.html','wrf-main-rabbit.webp','wrf-radar-emblem.webp'])fs.copyFileSync(f,'dist/'+f)\"",
+    "build": "node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});for(const f of ['index.html','radar.html','ocean-readable.html','writable-brain.html','hidden-cost-intelligence.html','body-as-data.html','wrf-main-rabbit.webp','wrf-radar-emblem.webp'])fs.copyFileSync(f,'dist/'+f)\"",
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
