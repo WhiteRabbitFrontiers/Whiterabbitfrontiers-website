@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-26",
+  "repository": "WhiteRabbitFrontiers/Whiterabbitfrontiers-website",
+  "editorial_branch": "editorial-production-system-v1-20261026",
+  "publication_policy": "Explicit editorial approval of a named, frozen version is mandatory; investigation or drafting never authorizes publication.",
+  "priority_source": "radar/rdq-investigation-priorities-2026-10-25.md",
+  "active_desk_source": "radar/rdq-active-research-desk-2026-10-25.md",
+  "stories": [
+    {
+      "id": "WRF-001",
+      "title": "What If AI Made Everyone More Valuable?",
+      "priority": "P1",
+      "frontier": "Human Possibility / AI & autonomy",
+      "stage": "investigate_active",
+      "publication_authorized": false,
+      "source_files": [
+        "radar/rdq-what-if-ai-made-everyone-more-valuable.md",
+        "radar/draft-special-edition-what-if-ai-made-everyone-more-valuable.md"
+      ],
+      "next_action": "Verify worker outcomes and distribution of gains; finalize independent source audit"
+    },
+    {
+      "id": "WRF-002",
+      "title": "Apple's Brain-Sensing Earbuds",
+      "priority": "P1",
+      "frontier": "Neurofrontiers / regulation",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-003",
+      "title": "Cancer Is Losing Its Address",
+      "priority": "P1",
+      "frontier": "Longevity & biotech",
+      "stage": "investigate_active",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Collect regulatory approvals, trials, access and resistance evidence"
+    },
+    {
+      "id": "WRF-004",
+      "title": "The Reef That Talks Back",
+      "priority": "P1",
+      "frontier": "Planetary perception",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-005",
+      "title": "Convergence: What Has Actually Been Demonstrated?",
+      "priority": "P1",
+      "frontier": "Cross-frontier",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-006",
+      "title": "ER-100: Reprogramming Aging Nerve Cells",
+      "priority": "P1",
+      "frontier": "Longevity & biotech",
+      "stage": "investigate_active",
+      "publication_authorized": false,
+      "source_files": [
+        "radar/er-100-epigenetic-reprogramming.md"
+      ],
+      "next_action": "Verify registry, endpoints, safety follow-up and independent interpretation"
+    },
+    {
+      "id": "WRF-007",
+      "title": "The Democratization of Invention",
+      "priority": "P1",
+      "frontier": "Human Possibility",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-008",
+      "title": "Cannabis and the Aging Brain",
+      "priority": "P2",
+      "frontier": "Neurofrontiers",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-009",
+      "title": "The Peptide Gold Rush",
+      "priority": "P2",
+      "frontier": "Longevity & biotech",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-010",
+      "title": "AI as Scientific Discovery Infrastructure",
+      "priority": "P2",
+      "frontier": "AI & autonomy",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-011",
+      "title": "When Brain Data Becomes a Commodity",
+      "priority": "P2",
+      "frontier": "Neurofrontiers / regulation",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-012",
+      "title": "Quantum Sensing and the Living Planet",
+      "priority": "P2",
+      "frontier": "Quantum horizons",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-013",
+      "title": "The Bone–Brain Axis",
+      "priority": "P2",
+      "frontier": "Longevity & biotech",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-014",
+      "title": "3D-Printed Meat: What Is Actually on Shelves?",
+      "priority": "P2",
+      "frontier": "Future systems",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-015",
+      "title": "Van Gogh's Starry Night: A Real Sky?",
+      "priority": "P3",
+      "frontier": "Science & culture",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-016",
+      "title": "The Psychedelic Brain Reset",
+      "priority": "P3",
+      "frontier": "Neurofrontiers",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-017",
+      "title": "If the Earth Is Readable, Is It Writable?",
+      "priority": "P3",
+      "frontier": "Planetary perception",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    },
+    {
+      "id": "WRF-018",
+      "title": "Artificial Wombs: Promise Versus Viral Claims",
+      "priority": "P3",
+      "frontier": "Longevity & biotech",
+      "stage": "investigate_backlog",
+      "publication_authorized": false,
+      "source_files": [],
+      "next_action": "Prepare evidence brief; do not publish"
+    }
+  ],
+  "live_site_inventory": [
+    {
+      "path": "index.html",
+      "type": "homepage"
+    },
+    {
+      "path": "radar.html",
+      "type": "Radar landing page"
+    },
+    {
+      "path": "ocean-readable.html",
+      "type": "article"
+    },
+    {
+      "path": "hidden-cost-intelligence.html",
+      "type": "article"
+    },
+    {
+      "path": "writable-brain.html",
+      "type": "article"
+    },
+    {
+      "path": "body-as-data.html",
+      "type": "article"
+    }
+  ],
+  "unclassified_existing_research": [],
+  "notes": [
+    "All 18 priorities are research only; the stage reflects scheduling, not publication readiness.",
+    "Published HTML inventory is a repository file inventory, not a claim that each live URL was independently verified.",
+    "Crosslinks to existing articles are tracked in inventory.md; do not infer that similarly titled investigations are approved."
+  ]
+}
