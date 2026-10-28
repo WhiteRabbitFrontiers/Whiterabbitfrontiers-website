@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});for(const f of ['index.html','radar.html','ocean-readable.html','writable-brain.html','hidden-cost-intelligence.html','body-as-data.html','wrf-main-rabbit.webp','wrf-radar-emblem.webp','radar-ai.webp','radar-bio.webp','radar-future.webp','radar-neuro.webp','radar-ocean.webp','radar-quantum.webp'])fs.copyFileSync(f,'dist/'+f)\"",
+    "build": "node scripts/build-site.mjs",
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
@@ -18,7 +18,9 @@
     "type-check": "tsc --noEmit",
     "format": "prettier --write \"src/**/*.{ts,tsx,json,md}\"",
     "clean": "rm -rf dist node_modules/.vite",
-    "reset": "npm run clean && npm install"
+    "reset": "npm run clean && npm install",
+    "test:publishing": "node --test scripts/build-site.test.mjs",
+    "preview:editorial": "node scripts/build-site.mjs --preview --out /tmp/wrf-private-preview"
   },
   "dependencies": {
     "@dr.pogodin/react-helmet": "~3.1.1",
