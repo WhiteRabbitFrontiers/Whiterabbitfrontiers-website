@@ -7,5 +7,19 @@
     "hidden-cost-intelligence.html",
     "body-as-data.html"
   ],
-  "articles": []
+  "articles": [
+    {
+      "slug": "what-if-you-could-change-the-lens",
+      "title": "What If You Could Change the Lens?",
+      "summary": "Same world. A different experience of being alive. What would you dial up—and what would you refuse to lose?",
+      "source": "editorial/articles/what-if-you-could-change-the-lens.md",
+      "category": "mind",
+      "date": "2026-11-01",
+      "evidence": "Human clinical trials · Future settings menu is speculative",
+      "image": "radar-neuro.webp",
+      "imageAlt": "Illustrated profile of a human head with a glowing network of connections across the brain",
+      "status": "published",
+      "approvedRevision": "0bc3a6e6823c43b9012bcee9d230e964b8d7d839043889d2796f13723ee0e006"
+    }
+  ]
 }
